@@ -17,7 +17,7 @@
     <div class="cursor cursor--small"></div>
     <canvas class="cursor cursor--canvas" resize></canvas>
 
-    <section id="landing" class="section-scroll d-xl-flex flex-column justify-content-center align-items-center justify-content-xl-center align-items-xl-center" style="height: 100vh;text-align: center;">
+    <section id="landing" class="section-scroll full-height d-xl-flex flex-column justify-content-center align-items-center justify-content-xl-center align-items-xl-center">
         <svg id="monster" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.11 458.4" style="width: 400px;">
             <defs>
             <style>.cls-1{fill:#000;}.cls-2,.cls-4{fill:#fff;}.cls-3{fill:#fc0;}.cls-4{fill-rule:evenodd;}</style></defs>
@@ -43,6 +43,7 @@
                 </g>
             </g>
         </svg>
+        <a onclick='sectionMove(2)'>
         <svg id="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.15 46.93" style="width: 50px;margin-top: 50px;">
             <defs>
                 <style>.arrow-1{fill:#000;}.arrow-2{fill:#fc0;}</style>
@@ -54,6 +55,7 @@
                 </g>
             </g>
         </svg>
+    </a>
     </section>
 
     <section class="section-scroll d-flex d-xl-flex flex-column justify-content-center align-items-center align-content-end align-self-stretch flex-wrap justify-content-xl-end align-items-xl-center" style="height: 100vh;">
@@ -123,10 +125,10 @@
                 <div class="container-fluid">
                     <div class="collapse navbar-collapse d-flex d-xl-flex justify-content-center align-items-center flex-xl-row justify-content-xl-center" id="navcol-1">
                         <ul class="nav navbar-nav d-flex justify-content-center align-items-center align-content-center flex-wrap flex-sm-column flex-md-row">
-                            <li class="nav-item d-inline-block justify-content-center align-items-center m-auto" style="padding-right: 20px;padding-left: 20px;font-size: 26px;"><a class="nav-link about-link" href="#who-we-are">who we are?</a></li>
-                            <li class="nav-item d-inline-block justify-content-center align-items-center m-auto" style="padding-right: 20px;padding-left: 20px;font-size: 26px;"><a class="nav-link" href="#">what we do?</a></li>
-                            <li class="nav-item d-inline-block justify-content-center align-items-center m-auto" style="padding-right: 20px;padding-left: 20px;font-size: 26px;"><a class="nav-link" href="#">work at a glance!</a></li>
-                            <li class="nav-item d-inline-block justify-content-center align-items-center m-auto" style="padding-right: 20px;padding-left: 20px;font-size: 26px;"><a class="nav-link" href="#">how to reach us?</a></li>
+                            <li class="nav-item d-inline-block justify-content-center align-items-center m-auto" style="padding-right: 20px;padding-left: 20px;font-size: 26px;"><a class="nav-link about-link link" onclick='sectionMove(3)'>who we are?</a></li>
+                            <li class="nav-item d-inline-block justify-content-center align-items-center m-auto" style="padding-right: 20px;padding-left: 20px;font-size: 26px;"><a class="nav-link link" onclick='sectionMove(4)'>what we do?</a></li>
+                            <li class="nav-item d-inline-block justify-content-center align-items-center m-auto" style="padding-right: 20px;padding-left: 20px;font-size: 26px;"><a class="nav-link link" onclick='sectionMove(3)'>work at a glance!</a></li>
+                            <li class="nav-item d-inline-block justify-content-center align-items-center m-auto" style="padding-right: 20px;padding-left: 20px;font-size: 26px;"><a class="nav-link link" onclick='sectionMove(3)'>how to reach us?</a></li>
                         </ul>
                     </div>
                 </div>
@@ -136,6 +138,7 @@
 
     <nav id="stick-nav" class="navbar navbar-light navbar-expand-md sticky-top navigation-clean">
         <div class="container-fluid">
+            <a onclick='sectionMove(1)'>
             <svg id="monster-nav" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.11 458.4" style="width: 80px;">
                 <defs>
                 <style>.cls-1{fill:#000;}.cls-2,.cls-4{fill:#fff;}.cls-3{fill:#fc0;}.cls-4{fill-rule:evenodd;}</style></defs>
@@ -161,20 +164,21 @@
                     </g>
                 </g>
             </svg>
+        </a>
             <button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggler"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse"
                 id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" style="padding-right: 20px;padding-left: 20px;"><a class="nav-link link" href="#">who are we?</a></li>
-                    <li class="nav-item" style="padding-right: 20px;padding-left: 20px;"><a class="nav-link" href="#">what we do?</a></li>
-                    <li class="nav-item" style="padding-right: 20px;padding-left: 20px;"><a class="nav-link" href="#" style="border-width: 2px;">work at a glance!</a></li>
-                    <li class="nav-item" style="padding-right: 20px;padding-left: 20px;"><a class="nav-link" href="#">how to reach us?</a></li>
+                    <li class="nav-item" style="padding-right: 20px;padding-left: 20px;"><a class="nav-link link s-navLink s-navLink-3" onclick='sectionMove(3)'>who are we?</a></li>
+                    <li class="nav-item" style="padding-right: 20px;padding-left: 20px;"><a class="nav-link link s-navLink s-navLink-4" onclick='sectionMove(4)'>what we do?</a></li>
+                    <li class="nav-item" style="padding-right: 20px;padding-left: 20px;"><a class="nav-link link s-navLink s-navLink-5" onclick='sectionMove(3)'>work at a glance!</a></li>
+                    <li class="nav-item" style="padding-right: 20px;padding-left: 20px;"><a class="nav-link link s-navLink s-navLink-6" onclick='sectionMove(3)'>how to reach us?</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section id="who-we-are" class="section-scroll section-scroll d-xl-flex justify-content-xl-center align-items-xl-center" style="height: 100vh;">
+    <section id="who-we-are" class="who-we-are section-scroll section-scroll d-xl-flex justify-content-xl-center align-items-xl-center" style="height: 100vh;">
         <div style="width: 100%;">
             <div class="container" style="width: 980px;padding-top: 40px;padding-bottom: 40px;">
                 <h1 class="m-1 display-1" style="color: #FFCC00;font-family: Quicksand;font-weight: 500;text-align: left;line-height: 1em;"><span class="anim-text-1">we</span></h1>
@@ -184,7 +188,7 @@
         </div>
     </section>
 
-    <section class="section-scroll d-xl-flex justify-content-xl-center align-items-xl-center" style="min-height: 100vh;">
+    <section class="who-we-are section-scroll d-xl-flex justify-content-xl-center align-items-xl-center" style="min-height: 100vh;">
         <div style="width: 100%;">
             <div class="container" style="width: 980px;padding-top: 40px;padding-bottom: 40px;">
                 <h1 class="display-1" style="color: #FFCC00;font-family: Quicksand;font-weight: 500;text-align: left;line-height: 1em;">love<br /></h1>
