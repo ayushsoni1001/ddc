@@ -22,7 +22,7 @@
     .huge-y-title{
         font-size: 82px;
     }
-    .large-y-title{
+    .large-y-title, .large-b-title{
         font-size: 62px;
     }
 }
@@ -100,6 +100,11 @@ a.nav-link.active{
 }
 .large-y-title{
     color: #fc0;
+    font-weight: 500;
+    line-height: 1em;
+}
+.large-0-title{
+    color: #000;
     font-weight: 500;
     line-height: 1em;
 }
