@@ -17,6 +17,7 @@ window.addEventListener('mousemove', (evt) => {
 // Eye END
 
 
+
 // Scrollify START
 // ===============
 $(function() {
@@ -34,7 +35,7 @@ $.scrollify({
     scrollbars: false,
     standardScrollElements: "",
     setHeights: false,
-    overflowScroll: true,
+    overflowScroll: false,
     updateHash: true,
     touchScroll:true,
     before:function() {},
@@ -51,19 +52,25 @@ function scrollActive() {
     var wH = window.pageYOffset,
         aa = $('#who-we-are').offset().top,
         bb = $('#what-we-do').offset().top,
+        cc = $('#portfolio').offset().top,
         dd = $('#reach-us').offset().top;
     if ((aa-2) < wH && (bb-2) > wH){
-        var Slink = document.querySelectorAll(".s-navLink-3");
+        var Alink = document.querySelectorAll(".s-navLink-3");
         $(".s-navLink").removeClass("active");
-        $(Slink).addClass("active");
+        $(Alink).addClass("active");
     }
-    if((bb-2) < wH && (dd-2) > wH){
-        var Dlink = document.querySelectorAll(".s-navLink-6");
+    if((bb-2) < wH && (cc-2) > wH){
+        var Blink = document.querySelectorAll(".s-navLink-6");
         $(".s-navLink").removeClass("active");
-        $(Dlink).addClass("active");
+        $(Blink).addClass("active");
+    }
+    if((cc-2) < wH && (dd-2) > wH){
+        var Clink = document.querySelectorAll(".s-navLink-9");
+        $(".s-navLink").removeClass("active");
+        $(Clink).addClass("active");
     }
     if((dd-2) < wH){
-        var Dlink = document.querySelectorAll(".s-navLink-9");
+        var Dlink = document.querySelectorAll(".s-navLink-10");
         $(".s-navLink").removeClass("active");
         $(Dlink).addClass("active");
     }
@@ -258,5 +265,3 @@ linkItems.forEach(item => {
 initHovers();
 // ===============
 // Courser END
-
-
