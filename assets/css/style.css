@@ -76,6 +76,16 @@
 }
 
 
+::-moz-selection {
+    color: #fc0;
+    background: #000;
+}
+
+::selection {
+    color: #fc0;
+    background: #000;
+}
+
 body{
     font-family: Quicksand, sans-serif;
 }
