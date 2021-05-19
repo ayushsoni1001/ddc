@@ -16,8 +16,8 @@
     <!-- The cursor elements --> 
     <div class="cursor cursor--small"></div>
     <canvas class="cursor cursor--canvas" resize></canvas>
-
-    <section id="landing" class="section-scroll full-height d-xl-flex flex-column justify-content-center align-items-center justify-content-xl-center align-items-xl-center">
+    <!-- Monster Logo Section -->
+    <section id="landing" class="section-scroll full-height d-flex flex-column justify-content-center align-items-center justify-content-center align-items-center">
         <svg id="monster" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.11 458.4" style="width: 400px;">
             <defs>
             <style>.cls-1{fill:#000;}.cls-2,.cls-4{fill:#fff;}.cls-3{fill:#fc0;}.cls-4{fill-rule:evenodd;}</style></defs>
@@ -57,9 +57,9 @@
         </svg>
     </a>
     </section>
-
-    <section class="section-scroll d-flex d-xl-flex flex-column justify-content-center align-items-center align-content-end align-self-stretch flex-wrap justify-content-xl-end align-items-xl-center" style="height: 100vh;">
-        <svg id="main-logo" class="d-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 462.13 264.51" style="width: 400px;margin-bottom: auto;margin-top: auto;">
+    <!-- Main Logo and Nav Section -->
+    <section class="section-scroll full-height d-flex d-flex flex-column justify-content-center align-items-center align-content-end align-self-stretch flex-wrap justify-content-end align-items-center">
+        <svg id="main-logo" class="d-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 462.13 264.51">
             <defs>
                 <style>.mainLogo-1{fill:#000;}.mainLogo-2{fill:#fc0;}.mainLogo-3,.mainLogo-4{fill:#fff;}.mainLogo-4{fill-rule:evenodd;}</style>
             </defs>
@@ -123,9 +123,9 @@
         <div class="d-block" style="width: 100%;">
             <nav class="navbar navbar-light navbar-expand text-center d-block" style="text-align: center;width: 100%;margin-bottom: 50px;">
                 <div class="container-fluid">
-                    <div class="collapse navbar-collapse d-flex d-xl-flex justify-content-center align-items-center flex-xl-row justify-content-xl-center" id="navcol-1">
+                    <div class="collapse navbar-collapse d-flex d-flex justify-content-center align-items-center flex-row justify-content-center" id="navcol-1">
                         <ul class="nav navbar-nav d-flex justify-content-center align-items-center align-content-center flex-wrap flex-sm-column flex-md-row">
-                            <li class="nav-item d-inline-block justify-content-center align-items-center m-auto" style="padding-right: 20px;padding-left: 20px;font-size: 26px;"><a class="nav-link about-link link" onclick='sectionMove(3)'>who we are?</a></li>
+                            <li class="nav-item d-inline-block justify-content-center align-items-center m-auto" style="padding-right: 20px;padding-left: 20px;font-size: 26px;"><a class="nav-link link" onclick='sectionMove(3)'>who we are?</a></li>
                             <li class="nav-item d-inline-block justify-content-center align-items-center m-auto" style="padding-right: 20px;padding-left: 20px;font-size: 26px;"><a class="nav-link link" onclick='sectionMove(4)'>what we do?</a></li>
                             <li class="nav-item d-inline-block justify-content-center align-items-center m-auto" style="padding-right: 20px;padding-left: 20px;font-size: 26px;"><a class="nav-link link" onclick='sectionMove(3)'>work at a glance!</a></li>
                             <li class="nav-item d-inline-block justify-content-center align-items-center m-auto" style="padding-right: 20px;padding-left: 20px;font-size: 26px;"><a class="nav-link link" onclick='sectionMove(3)'>how to reach us?</a></li>
@@ -178,22 +178,22 @@
         </div>
     </nav>
 
-    <section id="who-we-are" class="who-we-are section-scroll section-scroll d-xl-flex justify-content-xl-center align-items-xl-center" style="height: 100vh;">
+    <section id="who-we-are" class="section-scroll full-height d-flex justify-content-center align-items-center">
         <div style="width: 100%;">
-            <div class="container" style="width: 980px;padding-top: 40px;padding-bottom: 40px;">
-                <h1 class="m-1 display-1" style="color: #FFCC00;font-family: Quicksand;font-weight: 500;text-align: left;line-height: 1em;"><span class="anim-text-1">we</span></h1>
-                <h2 class="m-2 anim-text-2 display-3" style="color: #FFCC00;font-family: Quicksand;font-weight: 500;text-align: left;line-height: 1em;">are here to<br /></h2>
-                <p style="font-family: Quicksand, sans-serif;font-size: 24px;line-height: 1.6em;">... make your persona be felt everywhere<br />... brand you as never before<br />... giving your product an unimaginable launch<br />... making you capture your dreams with ease and perfection<br /></p>
+            <div class="container main-text-contain">
+                <h1 class="display-1 huge-y-title">we</h1>
+                <h2 class="display-3 large-y-title">are here to<br /></h2>
+                <p class="body-text">... make your persona be felt everywhere<br />... brand you as never before<br />... giving your product an unimaginable launch<br />... making you capture your dreams with ease and perfection<br /></p>
             </div>
         </div>
     </section>
 
-    <section class="who-we-are section-scroll d-xl-flex justify-content-xl-center align-items-xl-center" style="min-height: 100vh;">
+    <section class="section-scroll full-height d-flex justify-content-center align-items-center" style="min-height: 100vh;">
         <div style="width: 100%;">
-            <div class="container" style="width: 980px;padding-top: 40px;padding-bottom: 40px;">
-                <h1 class="display-1" style="color: #FFCC00;font-family: Quicksand;font-weight: 500;text-align: left;line-height: 1em;">love<br /></h1>
-                <h2 class="display-3" style="color: #FFCC00;font-family: Quicksand;font-weight: 500;text-align: left;line-height: 1em;">at first sight!<br /></h2>
-                <p style="font-family: Quicksand, sans-serif;font-size: 24px;line-height: 1.6em;">It happens not just between humans..<br />we fall in love with products<br />and companies too!<br /></p>
+            <div class="container main-text-contain">
+                <h1 class="display-1 huge-y-title">love<br /></h1>
+                <h2 class="display-3 large-y-title">at first sight!<br /></h2>
+                <p class="body-text">It happens not just between humans..<br />we fall in love with products<br />and companies too!<br /></p>
             </div>
         </div>
     </section>

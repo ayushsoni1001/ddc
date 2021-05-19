@@ -36,7 +36,7 @@ $.scrollify({
     setHeights: false,
     overflowScroll: true,
     updateHash: true,
-    touchScroll:false,
+    touchScroll:true,
     before:function() {},
     after:function() {
         logo.play();

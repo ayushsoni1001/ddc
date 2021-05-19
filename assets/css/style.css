@@ -1,9 +1,67 @@
 @media only screen and (max-width:768px) {
     #stick-nav {
-        position: relative;
-        top: 0;
+        display: none;
+    }
+    #monster {
+        width: 80%!important;
+    }
+    #main-logo {
+        width: 80%!important;
+    }
+    .cursor--canvas{
+        display: none;
+    }
+    /* Typography */
+    .main-text-contain{
+        width: 100%!important;
+    }
+    .body-text{
+        margin-top: 30px;
+        font-size: 22px!important;
+    }
+    .huge-y-title{
+        font-size: 82px;
+    }
+    .large-y-title{
+        font-size: 62px;
     }
 }
+
+
+@media only screen and (min-width:768px) {
+    /* Courser START*/
+    body,a {
+        cursor: none;
+    }
+    .cursor {
+        position: fixed;
+        left: 0;
+        top: 0;
+        pointer-events: none;
+    }
+    .cursor--small {
+        width: 5px;
+        height: 5px;
+        left: -2.5px;
+        top: -2.5px;
+        border-radius: 50%;
+        z-index: 11000;
+        background: #000;
+    }
+    .cursor--canvas {
+        width: 100vw;
+        height: 100vh;
+        z-index: 12000;
+    }
+    /* Courser END*/
+    #main-logo{
+        width: 400px;
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+}
+
+
 
 body{
     font-family: Quicksand, sans-serif;
@@ -18,38 +76,33 @@ a.nav-link.active{
     border-bottom: 3px solid #fc0;
 }
 
-#logo-morph{
-    visibility: hidden;
-}
-
 #stick-nav {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
 }
 
-body,a {
-    cursor: none;
+/* Typography */
+.main-text-contain{
+    width: 980px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: left;
+}
+.body-text{
+    font-size: 24px;
+    line-height: 1.6em;
+}
+.huge-y-title{
+    color: #fc0;
+    font-weight: 500;
+    line-height: 1em;
+}
+.large-y-title{
+    color: #fc0;
+    font-weight: 500;
+    line-height: 1em;
 }
 
-.cursor {
-    position: fixed;
-    left: 0;
-    top: 0;
-    pointer-events: none;
-}
-.cursor--small {
-    width: 5px;
-    height: 5px;
-    left: -2.5px;
-    top: -2.5px;
-    border-radius: 50%;
-    z-index: 11000;
-    background: #000;
-}
-.cursor--canvas {
-    width: 100vw;
-    height: 100vh;
-    z-index: 12000;
-}
+
 
