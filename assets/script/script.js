@@ -16,7 +16,41 @@ window.addEventListener('mousemove', (evt) => {
 // ===============
 // Eye END
 
+// Book START
+// ===============
 
+// ===============
+// Book END
+
+// Text Animation START
+// ===============
+// Wrap every letter in a span
+
+
+function animateText(){
+    var text = document.querySelectorAll('.ml7')
+    text.forEach(
+        function animateNow(selected){
+            var textWrapper = selected.querySelector('.letters');
+            console.log(textWrapper)
+            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+            anime.timeline({loop: false})
+            .add({
+                targets: '.ml7 .letter',
+                translateY: ["1.1em", 0],
+                translateX: ["0.55em", 0],
+                translateZ: 0,
+                rotateZ: [180, 0],
+                duration: 750,
+                easing: "easeOutExpo",
+                delay: (el, i) => 50 * i
+            })
+        }
+    )
+    description.play()
+}
+// ===============
+// Test Animation END
 
 // Scrollify START
 // ===============
@@ -35,13 +69,14 @@ $.scrollify({
     scrollbars: false,
     standardScrollElements: "",
     setHeights: false,
-    overflowScroll: false,
+    overflowScroll: true,
     updateHash: true,
     touchScroll:true,
-    before:function() {},
-    after:function() {
+    before:function() {
         logo.play();
-        var currentSection = $.scrollify.current();
+        animateText();
+    },
+    after:function() {
         scrollActive();
     },
     afterResize:function() {},
