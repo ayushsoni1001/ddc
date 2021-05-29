@@ -316,20 +316,20 @@
         var partJson = {
             "particles": {
                 "number": {
-                    "value": 35,
+                    "value": 50,
                     "density": {
                         "enable": true,
                         "value_area": 500
                     }
                 },
                 "color": {
-                "value": "#000"
+                "value": ["#000000", "#fc0"]
                 },
                 "shape": {
-                    "type": "image",
+                    "type": "circle",
                     "stroke": {
                         "width": 0,
-                        "color": "#000000"
+                        "color": ["#000000", "##fc0"]
                     },
                     "image": {
                         "src": "./assets/img/Asset 1BG.png", // Set image path.
@@ -338,17 +338,17 @@
                     }
                 },
                 "opacity": {
-                    "value": 0.5,
-                    "random": true,
+                    "value": 1,
+                    "random": false,
                     "anim": {
                         "enable": true,
                         "speed": 0.2,
-                        "opacity_min": 0.2,
+                        "opacity_min": 1,
                         "sync": false
                     }
                 },
                 "size": {
-                    "value": 45,
+                    "value": 5,
                     "random": false,
                     "anim": {
                         "enable": true,
@@ -366,10 +366,10 @@
                 },
                 "move": {
                     "enable": true,
-                    "speed": 2,
-                    "direction": "right",
+                    "speed": 1,
+                    "direction": "none",
                     "random": true,
-                    "straight": true,
+                    "straight": false,
                     "out_mode": "out",
                     "bounce": true,
                     "attract": {
@@ -383,7 +383,7 @@
                 "detect_on": "canvas",
                 "events": {
                     "onhover": {
-                        "enable": false,
+                        "enable": true,
                         "mode": "bubble"
                     }
                 },
@@ -394,7 +394,7 @@
                     },
                     "bubble": {
                         "distance": 300,
-                        "size": 50,
+                        "size": 8,
                         "duration": 0.2,
                         "opacity": 1
                     }
