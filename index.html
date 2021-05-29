@@ -403,18 +403,24 @@
             "retina_detect": true
         };
         var jsonUri = "data:text/plain;base64,"+window.btoa(JSON.stringify(partJson));
-        particlesJS.load('particles-anim', jsonUri, function() {
-        console.log('callback - particles.js config loaded');
-        });
+        particlesJS.load('particles-anim', jsonUri);
     </script>
     <script type="text/javascript">
+    if(window.innerWidth<768) {
         $("#flipbook").turn({
-            display: 'double',
+            display: 'single',
             width: 1000,
             height: 500,
             autoCenter: false,
-            pages: 2
         });
+    } else {
+        $("#flipbook").turn({
+            display: 'double',
+            width: 200,
+            height: 200,
+            autoCenter: false,
+        });
+    }
     </script> 
 </body>
 </html>

@@ -36,6 +36,23 @@
     .title-text{
         font-size: 42px;
     }
+    
+    /* Slider */
+    #flipbook{
+        width: 75%!important;
+        height: 80%!important;
+        margin-top: 20px;
+    }
+
+    .page img{
+        width: 100%!important;
+        height: 100%!important;
+        object-fit: cover;
+    }
+
+    #flipbook .shadow{
+        box-shadow: 0 0 70px #00000026;
+    }
 }
 
 
